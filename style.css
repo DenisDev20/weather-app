@@ -68,10 +68,50 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
 .select_inner {
     display: flex;
     justify-content: center;
     margin-bottom: 85px;
+
+}
+
+
+.btn-box {
+    margin-bottom: 60px;
+}
+
+.btn-city {
+    color: #fff;
+    width: 100px;
+    height: 38px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 40px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 178, 237, 0.9220063025210083) 100%, rgba(5, 98, 180, 1) 100%);
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    transition: all 0.8s;
+}
+
+.btn-city:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.btn-city:active {
+    background-color: #fff;
+    background-size: 100%;
+    transition: all 0s;
+}
+
+h1 {
+    margin-bottom: 10px;
 }
 
 .weather_inner {
