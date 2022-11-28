@@ -67,7 +67,20 @@ select {
     font: inherit;
 }
 
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@font-face {
+    font-family: "MontserratSemi";
+    src: url("https://fonts.googleapis.com/css2?family=Carter+One&family=Marmelad&family=Montserrat:wght@600&display=swap") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url("https://fonts.googleapis.com/css2?family=Carter+One&family=Marmelad&family=Montserrat:wght@700&display=swap") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -75,16 +88,19 @@ select {
     align-items: center;
 }
 
-.select_inner {
+.btn_inner {
     display: flex;
-    justify-content: center;
-    margin-bottom: 85px;
-
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 .btn-box {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 35px;
 }
 
 .btn-city {
@@ -94,9 +110,10 @@ select {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 5px;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 178, 237, 0.9220063025210083) 100%, rgba(5, 98, 180, 1) 100%);
     box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    font-family: 'MontserratSemi', sans-serif;
     transition: all 0.8s;
 }
 
@@ -112,6 +129,7 @@ select {
 
 h1 {
     margin-bottom: 10px;
+    font-family: 'MontserratBold', sans-serif;
 }
 
 .weather_inner {
@@ -136,6 +154,7 @@ h1 {
     color: #090979;
     font-weight: bold;
     font-size: 22px;
+    font-family: 'MontserratSemi', sans-serif;
 }
 
 .degrese {
@@ -143,12 +162,14 @@ h1 {
     color: #090979;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'MontserratSemi', sans-serif;
 }
 
 .clouds {
     color: #090979;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'MontserratSemi', sans-serif;
 }
 
 .other-features {}
